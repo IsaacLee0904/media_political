@@ -2,7 +2,7 @@
 
 ![Python version](https://img.shields.io/badge/Python%20Version-3.9+-lightgrey)
 ![GitHub last commit](https://img.shields.io/badge/last%20commit-Jul-green)
-![GitHub last commit](https://img.shields.io/badge/Repo%20Size-210M-blue)
+![GitHub last commit](https://img.shields.io/badge/Repo%20Size-2.3M-blue)
 ![GitHub last commit](https://img.shields.io/badge/Project%20Type-Analytical%20Project-red)
 
 Badge [source](https://shields.io/)
