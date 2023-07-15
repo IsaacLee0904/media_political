@@ -1,4 +1,5 @@
- ![banner](https://www.bbc.co.uk/news/world-54477523)
+![_114898511_hi062045152]
+
 ![Python version](https://img.shields.io/badge/Python%20Version-3.9+-lightgrey)
 ![GitHub last commit](https://img.shields.io/badge/last%20commit-Jul-green)
 ![GitHub last commit](https://img.shields.io/badge/Repo%20Size-210M-blue)
