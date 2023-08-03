@@ -391,3 +391,6 @@ Skew:                           3.545   Prob(JB):                         0.00
 Kurtosis:                      17.391   Cond. No.                         101.
 ==============================================================================
 ```
+
+## Reference
+[The Factor Analysis for Constructing a Composite Index](https://medium.com/analytics-vidhya/the-factor-analysis-for-constructing-a-composite-index-2496686fc54c) 
