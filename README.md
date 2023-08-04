@@ -299,13 +299,13 @@ voting_mean = 1.5372
 - 0.0986* Negative_3('不知道') 
 - 0.4686* Negative_3('可能因此不去投票') 
 - 0.1716* Negative_3('轉而支持其他候選人') 
-- 0.1267* $sex 
-+ 0.1772* $edu 
-+ 0.1455* $income 
-+ 0.2526* $political_knowledge 
-- 0.0307* $TC_issue 
-+ 0.0695* $political_polarization_mean 
-- 0.1438* $party_image_mean;
+- 0.1267* sex 
++ 0.1772* edu 
++ 0.1455* income 
++ 0.2526* political_knowledge 
+- 0.0307* TC_issue 
++ 0.0695* political_polarization_mean 
+- 0.1438* party_image_mean;
 ```
 ```
                             OLS Regression Results                            
@@ -354,7 +354,7 @@ Kurtosis:                       1.806   Cond. No.                         101.
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
-```
+```scss
 offline_media_pp_mean = 1.5678 
 + 0.3867* C(ethnic, 台灣人[其他]) 
 + 0.2094* C(ethnic, 台灣人[原住民]) 
@@ -425,7 +425,7 @@ Kurtosis:                       2.228   Cond. No.                         101.
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
-```
+```scss
 campaign_worker_pp_mean = 1.4316
 + 0.2027* C(ethnic, 台灣人[其他])
 - 0.1233* C(ethnic, 台灣人[原住民])
