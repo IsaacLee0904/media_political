@@ -16,7 +16,7 @@ Badge [source](https://shields.io/)
   - [Data Source](#data-source)
   - [Repository structure](#repository-structure)
   - [Workflow](#workflow)
-
+  - [Reference](#reference)
 
 ## Data Source
   - Survey data
@@ -212,7 +212,30 @@ ml_df['offlnie_scores'] = (df_factors_offlnie['Factors 1'] * fa_offline.get_fact
   * Total Cronbanc's alpha: 0.800056217962767
  
 ### Step4. Modeling
-online_media_pp_mean ~ IV
+```scss
+online_media_pp_mean = 1.0305 
++ 0.1111* C(ethnic, 台灣人[其他]) 
++ 0.0245* C(ethnic, 台灣人[原住民]) 
+- 0.0189* C(ethnic, 台灣人[大陸各省市人]) 
+- 0.0896* C(ethnic, 台灣人[本省客家人]) 
+- 0.0550* C(ethnic, 台灣人[本省閩南人]) 
+- 0.0433* C(Negative_1, 沒有影響[不知道]) 
++ 0.1241* C(Negative_1, 沒有影響[可能因此不去投票]) 
++ 0.0212* C(Negative_1, 沒有影響[轉而支持其他候選人]) 
++ 0.0017* C(Negative_2, 沒有影響[不知道]) 
+- 0.2322* C(Negative_2, 沒有影響[可能因此不去投票]) 
++ 0.0998* C(Negative_2, 沒有影響[轉而支持其他候選人]) 
+- 0.0122* C(Negative_3, 沒有影響[不知道]) 
++ 0.1329* C(Negative_3, 沒有影響[可能因此不去投票]) 
+- 0.0576* C(Negative_3, 沒有影響[轉而支持其他候選人]) 
++ 0.0613* sex 
++ 0.1088* edu 
++ 0.0234* income 
++ 0.0509* political_knowledge 
++ 0.0085* TC_issue 
++ 0.0293* political_polarization_mean 
+- 0.0623* party_image_mean
+```
 ```
                              OLS Regression Results                             
 ================================================================================
@@ -260,7 +283,30 @@ Kurtosis:                       6.585   Cond. No.                         101.
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
-voting_mean ~ IV
+```scss
+voting_mean = 1.5372 
++ 0.1619* ethnic('其他') 
++ 0.6316* ethnic('原住民') 
+- 0.2645* ethnic('大陸各省市人') 
++ 0.1775* ethnic('本省客家人') 
++ 0.0381* ethnic('本省閩南人') 
+- 0.0573* Negative_1('不知道') 
++ 0.1274* Negative_1('可能因此不去投票') 
++ 0.3580* Negative_1('轉而支持其他候選人') 
+- 0.3703* Negative_2('不知道') 
+- 0.4460* Negative_2('可能因此不去投票') 
++ 0.0011* Negative_2('轉而支持其他候選人') 
+- 0.0986* Negative_3('不知道') 
+- 0.4686* Negative_3('可能因此不去投票') 
+- 0.1716* Negative_3('轉而支持其他候選人') 
+- 0.1267* $sex 
++ 0.1772* $edu 
++ 0.1455* $income 
++ 0.2526* $political_knowledge 
+- 0.0307* $TC_issue 
++ 0.0695* $political_polarization_mean 
+- 0.1438* $party_image_mean;
+```
 ```
                             OLS Regression Results                            
 ==============================================================================
@@ -308,7 +354,30 @@ Kurtosis:                       1.806   Cond. No.                         101.
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
-offline_media_pp_mean ~ IV
+```
+offline_media_pp_mean = 1.5678 
++ 0.3867* C(ethnic, 台灣人[其他]) 
++ 0.2094* C(ethnic, 台灣人[原住民]) 
+- 0.4852* C(ethnic, 台灣人[大陸各省市人]) 
+- 0.1455* C(ethnic, 台灣人[本省客家人]) 
+- 0.0929* C(ethnic, 台灣人[本省閩南人]) 
+- 0.1142* C(Negative_1, 沒有影響[不知道]) 
++ 0.1127* C(Negative_1, 沒有影響[可能因此不去投票]) 
++ 0.2423* C(Negative_1, 沒有影響[轉而支持其他候選人]) 
+- 0.2760* C(Negative_2, 沒有影響[不知道]) 
+- 0.4682* C(Negative_2, 沒有影響[可能因此不去投票]) 
++ 0.1706* C(Negative_2, 沒有影響[轉而支持其他候選人]) 
+- 0.1731* C(Negative_3, 沒有影響[不知道]) 
+- 0.1712* C(Negative_3, 沒有影響[可能因此不去投票]) 
+- 0.0360* C(Negative_3, 沒有影響[轉而支持其他候選人]) 
+- 0.0826* sex 
++ 0.0346* edu 
++ 0.0848* income 
++ 0.1355* political_knowledge 
++ 0.0207* TC_issue 
++ 0.1235* political_polarization_mean 
+- 0.0909* party_image_mean
+```
 ```
                               OLS Regression Results                             
 =================================================================================
@@ -356,7 +425,30 @@ Kurtosis:                       2.228   Cond. No.                         101.
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
-campaign_worker_pp_mean ~ IV
+```
+campaign_worker_pp_mean = 1.4316
++ 0.2027* C(ethnic, 台灣人[其他])
+- 0.1233* C(ethnic, 台灣人[原住民])
+- 0.0985* C(ethnic, 台灣人[大陸各省市人])
+- 0.0284* C(ethnic, 台灣人[本省客家人])
+- 0.0010* C(ethnic, 台灣人[本省閩南人])
++ 0.0542* C(Negative_1, 沒有影響[不知道])
++ 0.0128* C(Negative_1, 沒有影響[可能因此不去投票])
+- 0.0341* C(Negative_1, 沒有影響[轉而支持其他候選人])
++ 0.0694* C(Negative_2, 沒有影響[不知道])
+- 0.1248* C(Negative_2, 沒有影響[可能因此不去投票])
++ 0.0905* C(Negative_2, 沒有影響[轉而支持其他候選人])
+- 0.0097* C(Negative_3, 沒有影響[不知道])
++ 0.2979* C(Negative_3, 沒有影響[可能因此不去投票])
++ 0.0143* C(Negative_3, 沒有影響[轉而支持其他候選人])
++ 0.0426* sex
+- 0.0385* edu
++ 0.0065* income
+- 0.0500* political_knowledge
++ 0.0165* TC_issue
+- 0.0394* political_polarization_mean
++ 0.0110* party_image_mean
+```
 ```
                                OLS Regression Results                              
 ===================================================================================
