@@ -212,6 +212,7 @@ ml_df['offlnie_scores'] = (df_factors_offlnie['Factors 1'] * fa_offline.get_fact
   * Total Cronbanc's alpha: 0.800056217962767
  
 ### Step4. Modeling
+#### online_media_pp_mean ~ anti_party + IV
 ```scss
 online_media_pp_mean = 1.0305 
 + 0.1111* C(ethnic, 台灣人[其他]) 
@@ -283,6 +284,7 @@ Kurtosis:                       6.585   Cond. No.                         101.
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
+#### voting_mean ~ anti_party + IV
 ```scss
 voting_mean = 1.5372 
 + 0.1619* ethnic('其他') 
@@ -354,6 +356,7 @@ Kurtosis:                       1.806   Cond. No.                         101.
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
+#### offline_media_pp_mean ~ anti_party + IV
 ```scss
 offline_media_pp_mean = 1.5678 
 + 0.3867* C(ethnic, 台灣人[其他]) 
@@ -425,6 +428,7 @@ Kurtosis:                       2.228   Cond. No.                         101.
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
+#### campaign_worker_pp_mean ~ anti_party + IV
 ```scss
 campaign_worker_pp_mean = 1.4316
 + 0.2027* C(ethnic, 台灣人[其他])
