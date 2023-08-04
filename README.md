@@ -212,6 +212,7 @@ ml_df['offlnie_scores'] = (df_factors_offlnie['Factors 1'] * fa_offline.get_fact
   * Total Cronbanc's alpha: 0.800056217962767
  
 ### Step4. Modeling
+online_media_pp_mean ~ IV
 ```
                              OLS Regression Results                             
 ================================================================================
@@ -258,6 +259,9 @@ Kurtosis:                       6.585   Cond. No.                         101.
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+```
+voting_mean ~ IV
+```
                             OLS Regression Results                            
 ==============================================================================
 Dep. Variable:            voting_mean   R-squared:                       0.107
@@ -303,6 +307,9 @@ Kurtosis:                       1.806   Cond. No.                         101.
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+```
+offline_media_pp_mean ~ IV
+```
                               OLS Regression Results                             
 =================================================================================
 Dep. Variable:     offline_media_pp_mean   R-squared:                       0.118
@@ -348,6 +355,9 @@ Kurtosis:                       2.228   Cond. No.                         101.
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+```
+campaign_worker_pp_mean ~ IV
+```
                                OLS Regression Results                              
 ===================================================================================
 Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.039
@@ -391,6 +401,5 @@ Skew:                           3.545   Prob(JB):                         0.00
 Kurtosis:                      17.391   Cond. No.                         101.
 ==============================================================================
 ```
-
 ## Reference
 [The Factor Analysis for Constructing a Composite Index](https://medium.com/analytics-vidhya/the-factor-analysis-for-constructing-a-composite-index-2496686fc54c) 
