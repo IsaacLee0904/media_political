@@ -5,7 +5,7 @@ Dep. Variable:     offline_media_pp_mean   R-squared:                       0.01
 Model:                               OLS   Adj. R-squared:                  0.002
 Method:                    Least Squares   F-statistic:                     1.103
 Date:                   Tue, 12 Sep 2023   Prob (F-statistic):              0.359
-Time:                           08:46:10   Log-Likelihood:                -703.71
+Time:                           09:17:09   Log-Likelihood:                -703.71
 No. Observations:                    503   AIC:                             1425.
 Df Residuals:                        494   BIC:                             1463.
 Df Model:                              8                                         
@@ -39,7 +39,7 @@ Dep. Variable:     offline_media_pp_mean   R-squared:                       0.02
 Model:                               OLS   Adj. R-squared:                  0.009
 Method:                    Least Squares   F-statistic:                     1.461
 Date:                   Tue, 12 Sep 2023   Prob (F-statistic):              0.151
-Time:                           08:46:10   Log-Likelihood:                -700.80
+Time:                           09:17:09   Log-Likelihood:                -700.80
 No. Observations:                    503   AIC:                             1424.
 Df Residuals:                        492   BIC:                             1470.
 Df Model:                             10                                         
@@ -68,6 +68,8 @@ Kurtosis:                       1.997   Cond. No.                         91.1
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
+ΔF for Model Group 1: 2.8603
+p-value for ΔF for Model Group 1: 5.8201e-02
 --------------------------------------------------------------------------------
 
 Model Group 2 - Level 1:
@@ -77,7 +79,7 @@ Dep. Variable:     offline_media_pp_mean   R-squared:                       0.01
 Model:                               OLS   Adj. R-squared:                  0.002
 Method:                    Least Squares   F-statistic:                     1.103
 Date:                   Tue, 12 Sep 2023   Prob (F-statistic):              0.359
-Time:                           08:46:10   Log-Likelihood:                -703.71
+Time:                           09:17:09   Log-Likelihood:                -703.71
 No. Observations:                    503   AIC:                             1425.
 Df Residuals:                        494   BIC:                             1463.
 Df Model:                              8                                         
@@ -111,7 +113,7 @@ Dep. Variable:     offline_media_pp_mean   R-squared:                       0.10
 Model:                               OLS   Adj. R-squared:                  0.068
 Method:                    Least Squares   F-statistic:                     3.021
 Date:                   Tue, 12 Sep 2023   Prob (F-statistic):           3.28e-05
-Time:                           08:46:10   Log-Likelihood:                -681.39
+Time:                           09:17:09   Log-Likelihood:                -681.39
 No. Observations:                    503   AIC:                             1401.
 Df Residuals:                        484   BIC:                             1481.
 Df Model:                             18                                         
@@ -148,6 +150,8 @@ Kurtosis:                       2.172   Cond. No.                         81.5
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
+ΔF for Model Group 2: 4.4918
+p-value for ΔF for Model Group 2: 4.3843e-06
 --------------------------------------------------------------------------------
 
 Model Group 3 - Level 1:
@@ -157,7 +161,7 @@ Dep. Variable:     offline_media_pp_mean   R-squared:                       0.01
 Model:                               OLS   Adj. R-squared:                  0.002
 Method:                    Least Squares   F-statistic:                     1.103
 Date:                   Tue, 12 Sep 2023   Prob (F-statistic):              0.359
-Time:                           08:46:10   Log-Likelihood:                -703.71
+Time:                           09:17:09   Log-Likelihood:                -703.71
 No. Observations:                    503   AIC:                             1425.
 Df Residuals:                        494   BIC:                             1463.
 Df Model:                              8                                         
@@ -191,7 +195,7 @@ Dep. Variable:     offline_media_pp_mean   R-squared:                       0.05
 Model:                               OLS   Adj. R-squared:                  0.032
 Method:                    Least Squares   F-statistic:                     2.500
 Date:                   Tue, 12 Sep 2023   Prob (F-statistic):            0.00459
-Time:                           08:46:10   Log-Likelihood:                -694.45
+Time:                           09:17:09   Log-Likelihood:                -694.45
 No. Observations:                    503   AIC:                             1413.
 Df Residuals:                        491   BIC:                             1464.
 Df Model:                             11                                         
@@ -221,5 +225,7 @@ Kurtosis:                       2.060   Cond. No.                         116.
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
+ΔF for Model Group 3: 6.1324
+p-value for ΔF for Model Group 3: 4.2360e-04
 --------------------------------------------------------------------------------
 
