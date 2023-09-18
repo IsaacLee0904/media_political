@@ -1,32 +1,33 @@
 Model Group 1 - Level 1:
                                OLS Regression Results                              
 ===================================================================================
-Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.010
-Model:                                 OLS   Adj. R-squared:                 -0.006
-Method:                      Least Squares   F-statistic:                    0.6184
-Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.763
-Time:                             09:33:53   Log-Likelihood:                -360.49
-No. Observations:                      503   AIC:                             739.0
-Df Residuals:                          494   BIC:                             777.0
-Df Model:                                8                                         
+Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.015
+Model:                                 OLS   Adj. R-squared:                 -0.003
+Method:                      Least Squares   F-statistic:                    0.8128
+Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.605
+Time:                             17:31:01   Log-Likelihood:                -359.29
+No. Observations:                      503   AIC:                             738.6
+Df Residuals:                          493   BIC:                             780.8
+Df Model:                                9                                         
 Covariance Type:                 nonrobust                                         
 =================================================================================
                     coef    std err          t      P>|t|      [0.025      0.975]
 ---------------------------------------------------------------------------------
-const             1.5034      0.214      7.040      0.000       1.084       1.923
-sex               0.0375      0.049      0.765      0.444      -0.059       0.134
-edu              -0.0468      0.051     -0.920      0.358      -0.147       0.053
-income            0.0008      0.022      0.038      0.970      -0.043       0.044
-ethnic_原住民       -0.3370      0.200     -1.685      0.093      -0.730       0.056
-ethnic_大陸各省市人    -0.2930      0.190     -1.540      0.124      -0.667       0.081
-ethnic_本省客家人     -0.2238      0.150     -1.497      0.135      -0.518       0.070
-ethnic_本省閩南人     -0.1930      0.132     -1.462      0.144      -0.452       0.066
-ethnic_臺灣人       -0.2015      0.159     -1.271      0.204      -0.513       0.110
+const             1.4448      0.217      6.669      0.000       1.019       1.870
+sex               0.0332      0.049      0.677      0.499      -0.063       0.129
+age               0.0737      0.048      1.534      0.126      -0.021       0.168
+edu              -0.0496      0.051     -0.977      0.329      -0.149       0.050
+income           -0.0108      0.023     -0.461      0.645      -0.057       0.035
+ethnic_原住民       -0.3165      0.200     -1.581      0.114      -0.710       0.077
+ethnic_大陸各省市人    -0.2903      0.190     -1.528      0.127      -0.664       0.083
+ethnic_本省客家人     -0.2196      0.149     -1.470      0.142      -0.513       0.074
+ethnic_本省閩南人     -0.1827      0.132     -1.384      0.167      -0.442       0.077
+ethnic_臺灣人       -0.1908      0.158     -1.204      0.229      -0.502       0.120
 ==============================================================================
-Omnibus:                      409.469   Durbin-Watson:                   1.893
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5753.867
-Skew:                           3.657   Prob(JB):                         0.00
-Kurtosis:                      17.867   Cond. No.                         64.0
+Omnibus:                      406.805   Durbin-Watson:                   1.911
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5637.769
+Skew:                           3.628   Prob(JB):                         0.00
+Kurtosis:                      17.708   Cond. No.                         66.8
 ==============================================================================
 
 Notes:
@@ -35,72 +36,75 @@ Notes:
 Model Group 1 - Level 2:
                                OLS Regression Results                              
 ===================================================================================
-Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.014
-Model:                                 OLS   Adj. R-squared:                 -0.006
-Method:                      Least Squares   F-statistic:                    0.6955
-Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.729
-Time:                             09:33:53   Log-Likelihood:                -359.47
-No. Observations:                      503   AIC:                             740.9
-Df Residuals:                          492   BIC:                             787.4
-Df Model:                               10                                         
+Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.019
+Model:                                 OLS   Adj. R-squared:                 -0.003
+Method:                      Least Squares   F-statistic:                    0.8555
+Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.584
+Time:                             17:31:01   Log-Likelihood:                -358.22
+No. Observations:                      503   AIC:                             740.4
+Df Residuals:                          491   BIC:                             791.1
+Df Model:                               11                                         
 Covariance Type:                 nonrobust                                         
 =======================================================================================
                           coef    std err          t      P>|t|      [0.025      0.975]
 ---------------------------------------------------------------------------------------
-const                   1.6124      0.250      6.461      0.000       1.122       2.103
-sex                     0.0476      0.050      0.960      0.337      -0.050       0.145
-edu                    -0.0445      0.051     -0.874      0.383      -0.145       0.056
-income                 -0.0002      0.022     -0.007      0.994      -0.044       0.044
-ethnic_原住民             -0.3502      0.200     -1.747      0.081      -0.744       0.044
-ethnic_大陸各省市人          -0.3008      0.190     -1.580      0.115      -0.675       0.073
-ethnic_本省客家人           -0.2365      0.150     -1.579      0.115      -0.531       0.058
-ethnic_本省閩南人           -0.2037      0.132     -1.540      0.124      -0.464       0.056
-ethnic_臺灣人             -0.2107      0.159     -1.328      0.185      -0.523       0.101
-political_knowledge    -0.0519      0.040     -1.295      0.196      -0.131       0.027
-TC_issue                0.0117      0.020      0.598      0.550      -0.027       0.050
+const                   1.5505      0.252      6.144      0.000       1.055       2.046
+sex                     0.0433      0.050      0.874      0.382      -0.054       0.141
+age                     0.0750      0.048      1.560      0.119      -0.019       0.169
+edu                    -0.0472      0.051     -0.927      0.354      -0.147       0.053
+income                 -0.0120      0.023     -0.512      0.609      -0.058       0.034
+ethnic_原住民             -0.3300      0.201     -1.646      0.100      -0.724       0.064
+ethnic_大陸各省市人          -0.2982      0.190     -1.569      0.117      -0.672       0.075
+ethnic_本省客家人           -0.2326      0.150     -1.555      0.121      -0.527       0.061
+ethnic_本省閩南人           -0.1937      0.132     -1.465      0.144      -0.454       0.066
+ethnic_臺灣人             -0.2002      0.159     -1.262      0.208      -0.512       0.111
+political_knowledge    -0.0522      0.040     -1.304      0.193      -0.131       0.026
+TC_issue                0.0127      0.020      0.648      0.517      -0.026       0.051
 ==============================================================================
-Omnibus:                      409.094   Durbin-Watson:                   1.895
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5763.447
-Skew:                           3.651   Prob(JB):                         0.00
-Kurtosis:                      17.889   Cond. No.                         91.1
+Omnibus:                      406.260   Durbin-Watson:                   1.912
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5637.119
+Skew:                           3.620   Prob(JB):                         0.00
+Kurtosis:                      17.715   Cond. No.                         93.4
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
-ΔF for Model Group 1: 1.0035160451766814
-p-value for ΔF (Model Group 1): 0.367337308476106
+ΔF for Model Group 1: 1.0468
+p-value for ΔF: 0.3519
+
 --------------------------------------------------------------------------------
 
 Model Group 2 - Level 1:
                                OLS Regression Results                              
 ===================================================================================
-Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.010
-Model:                                 OLS   Adj. R-squared:                 -0.006
-Method:                      Least Squares   F-statistic:                    0.6184
-Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.763
-Time:                             09:33:53   Log-Likelihood:                -360.49
-No. Observations:                      503   AIC:                             739.0
-Df Residuals:                          494   BIC:                             777.0
-Df Model:                                8                                         
+Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.015
+Model:                                 OLS   Adj. R-squared:                 -0.003
+Method:                      Least Squares   F-statistic:                    0.8128
+Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.605
+Time:                             17:31:01   Log-Likelihood:                -359.29
+No. Observations:                      503   AIC:                             738.6
+Df Residuals:                          493   BIC:                             780.8
+Df Model:                                9                                         
 Covariance Type:                 nonrobust                                         
 =================================================================================
                     coef    std err          t      P>|t|      [0.025      0.975]
 ---------------------------------------------------------------------------------
-const             1.5034      0.214      7.040      0.000       1.084       1.923
-sex               0.0375      0.049      0.765      0.444      -0.059       0.134
-edu              -0.0468      0.051     -0.920      0.358      -0.147       0.053
-income            0.0008      0.022      0.038      0.970      -0.043       0.044
-ethnic_原住民       -0.3370      0.200     -1.685      0.093      -0.730       0.056
-ethnic_大陸各省市人    -0.2930      0.190     -1.540      0.124      -0.667       0.081
-ethnic_本省客家人     -0.2238      0.150     -1.497      0.135      -0.518       0.070
-ethnic_本省閩南人     -0.1930      0.132     -1.462      0.144      -0.452       0.066
-ethnic_臺灣人       -0.2015      0.159     -1.271      0.204      -0.513       0.110
+const             1.4448      0.217      6.669      0.000       1.019       1.870
+sex               0.0332      0.049      0.677      0.499      -0.063       0.129
+age               0.0737      0.048      1.534      0.126      -0.021       0.168
+edu              -0.0496      0.051     -0.977      0.329      -0.149       0.050
+income           -0.0108      0.023     -0.461      0.645      -0.057       0.035
+ethnic_原住民       -0.3165      0.200     -1.581      0.114      -0.710       0.077
+ethnic_大陸各省市人    -0.2903      0.190     -1.528      0.127      -0.664       0.083
+ethnic_本省客家人     -0.2196      0.149     -1.470      0.142      -0.513       0.074
+ethnic_本省閩南人     -0.1827      0.132     -1.384      0.167      -0.442       0.077
+ethnic_臺灣人       -0.1908      0.158     -1.204      0.229      -0.502       0.120
 ==============================================================================
-Omnibus:                      409.469   Durbin-Watson:                   1.893
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5753.867
-Skew:                           3.657   Prob(JB):                         0.00
-Kurtosis:                      17.867   Cond. No.                         64.0
+Omnibus:                      406.805   Durbin-Watson:                   1.911
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5637.769
+Skew:                           3.628   Prob(JB):                         0.00
+Kurtosis:                      17.708   Cond. No.                         66.8
 ==============================================================================
 
 Notes:
@@ -109,80 +113,83 @@ Notes:
 Model Group 2 - Level 2:
                                OLS Regression Results                              
 ===================================================================================
-Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.033
-Model:                                 OLS   Adj. R-squared:                 -0.003
-Method:                      Least Squares   F-statistic:                    0.9269
-Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.546
-Time:                             09:33:53   Log-Likelihood:                -354.47
-No. Observations:                      503   AIC:                             746.9
-Df Residuals:                          484   BIC:                             827.1
-Df Model:                               18                                         
+Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.039
+Model:                                 OLS   Adj. R-squared:                  0.001
+Method:                      Least Squares   F-statistic:                     1.029
+Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.425
+Time:                             17:31:01   Log-Likelihood:                -353.02
+No. Observations:                      503   AIC:                             746.0
+Df Residuals:                          483   BIC:                             830.4
+Df Model:                               19                                         
 Covariance Type:                 nonrobust                                         
 ========================================================================================
                            coef    std err          t      P>|t|      [0.025      0.975]
 ----------------------------------------------------------------------------------------
-const                    1.7027      0.260      6.552      0.000       1.192       2.213
-sex                      0.0383      0.050      0.767      0.443      -0.060       0.136
-edu                     -0.0420      0.051     -0.819      0.413      -0.143       0.059
-income                   0.0061      0.022      0.274      0.784      -0.038       0.050
-ethnic_原住民              -0.3251      0.202     -1.607      0.109      -0.723       0.072
-ethnic_大陸各省市人           -0.2998      0.191     -1.567      0.118      -0.676       0.076
-ethnic_本省客家人            -0.2212      0.150     -1.471      0.142      -0.517       0.074
-ethnic_本省閩南人            -0.1960      0.133     -1.477      0.140      -0.457       0.065
-ethnic_臺灣人              -0.2012      0.159     -1.266      0.206      -0.514       0.111
-political_knowledge     -0.0537      0.041     -1.324      0.186      -0.133       0.026
-Negative_1_可能因此不去投票     -0.0573      0.126     -0.453      0.651      -0.306       0.191
-Negative_1_沒有影響         -0.0447      0.096     -0.464      0.643      -0.234       0.145
-Negative_1_轉而支持其他候選人    -0.0889      0.094     -0.942      0.347      -0.274       0.097
-Negative_2_可能因此不去投票     -0.1853      0.162     -1.143      0.254      -0.504       0.133
-Negative_2_沒有影響         -0.0756      0.096     -0.789      0.431      -0.264       0.113
-Negative_2_轉而支持其他候選人     0.0029      0.095      0.030      0.976      -0.184       0.190
-Negative_3_可能因此不去投票      0.3029      0.138      2.192      0.029       0.031       0.574
-Negative_3_沒有影響         -0.0027      0.089     -0.031      0.976      -0.178       0.173
-Negative_3_轉而支持其他候選人     0.0252      0.085      0.295      0.768      -0.143       0.193
+const                    1.6385      0.262      6.249      0.000       1.123       2.154
+sex                      0.0337      0.050      0.676      0.499      -0.064       0.132
+age                      0.0813      0.049      1.675      0.095      -0.014       0.177
+edu                     -0.0438      0.051     -0.856      0.393      -0.144       0.057
+income                  -0.0066      0.024     -0.279      0.780      -0.053       0.040
+ethnic_原住民              -0.3008      0.202     -1.486      0.138      -0.699       0.097
+ethnic_大陸各省市人           -0.2975      0.191     -1.558      0.120      -0.673       0.078
+ethnic_本省客家人            -0.2170      0.150     -1.446      0.149      -0.512       0.078
+ethnic_本省閩南人            -0.1852      0.133     -1.396      0.163      -0.446       0.075
+ethnic_臺灣人              -0.1892      0.159     -1.191      0.234      -0.501       0.123
+political_knowledge     -0.0545      0.040     -1.347      0.179      -0.134       0.025
+Negative_1_可能因此不去投票     -0.0544      0.126     -0.431      0.666      -0.302       0.194
+Negative_1_沒有影響         -0.0546      0.096     -0.566      0.571      -0.244       0.135
+Negative_1_轉而支持其他候選人    -0.0926      0.094     -0.982      0.327      -0.278       0.093
+Negative_2_可能因此不去投票     -0.1849      0.162     -1.142      0.254      -0.503       0.133
+Negative_2_沒有影響         -0.0727      0.096     -0.760      0.448      -0.261       0.115
+Negative_2_轉而支持其他候選人     0.0090      0.095      0.094      0.925      -0.178       0.196
+Negative_3_可能因此不去投票      0.2985      0.138      2.164      0.031       0.027       0.570
+Negative_3_沒有影響         -0.0063      0.089     -0.071      0.944      -0.181       0.169
+Negative_3_轉而支持其他候選人     0.0271      0.085      0.318      0.751      -0.140       0.195
 ==============================================================================
-Omnibus:                      399.722   Durbin-Watson:                   1.889
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5346.552
-Skew:                           3.551   Prob(JB):                         0.00
-Kurtosis:                      17.306   Cond. No.                         81.5
+Omnibus:                      396.471   Durbin-Watson:                   1.905
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5209.663
+Skew:                           3.517   Prob(JB):                         0.00
+Kurtosis:                      17.111   Cond. No.                         84.0
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
-ΔF for Model Group 2: 1.1719296893358873
-p-value for ΔF (Model Group 2): 0.30739781750709416
+ΔF for Model Group 2: 1.2203
+p-value for ΔF: 0.2751
+
 --------------------------------------------------------------------------------
 
 Model Group 3 - Level 1:
                                OLS Regression Results                              
 ===================================================================================
-Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.010
-Model:                                 OLS   Adj. R-squared:                 -0.006
-Method:                      Least Squares   F-statistic:                    0.6184
-Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.763
-Time:                             09:33:53   Log-Likelihood:                -360.49
-No. Observations:                      503   AIC:                             739.0
-Df Residuals:                          494   BIC:                             777.0
-Df Model:                                8                                         
+Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.015
+Model:                                 OLS   Adj. R-squared:                 -0.003
+Method:                      Least Squares   F-statistic:                    0.8128
+Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.605
+Time:                             17:31:01   Log-Likelihood:                -359.29
+No. Observations:                      503   AIC:                             738.6
+Df Residuals:                          493   BIC:                             780.8
+Df Model:                                9                                         
 Covariance Type:                 nonrobust                                         
 =================================================================================
                     coef    std err          t      P>|t|      [0.025      0.975]
 ---------------------------------------------------------------------------------
-const             1.5034      0.214      7.040      0.000       1.084       1.923
-sex               0.0375      0.049      0.765      0.444      -0.059       0.134
-edu              -0.0468      0.051     -0.920      0.358      -0.147       0.053
-income            0.0008      0.022      0.038      0.970      -0.043       0.044
-ethnic_原住民       -0.3370      0.200     -1.685      0.093      -0.730       0.056
-ethnic_大陸各省市人    -0.2930      0.190     -1.540      0.124      -0.667       0.081
-ethnic_本省客家人     -0.2238      0.150     -1.497      0.135      -0.518       0.070
-ethnic_本省閩南人     -0.1930      0.132     -1.462      0.144      -0.452       0.066
-ethnic_臺灣人       -0.2015      0.159     -1.271      0.204      -0.513       0.110
+const             1.4448      0.217      6.669      0.000       1.019       1.870
+sex               0.0332      0.049      0.677      0.499      -0.063       0.129
+edu              -0.0496      0.051     -0.977      0.329      -0.149       0.050
+age               0.0737      0.048      1.534      0.126      -0.021       0.168
+income           -0.0108      0.023     -0.461      0.645      -0.057       0.035
+ethnic_原住民       -0.3165      0.200     -1.581      0.114      -0.710       0.077
+ethnic_大陸各省市人    -0.2903      0.190     -1.528      0.127      -0.664       0.083
+ethnic_本省客家人     -0.2196      0.149     -1.470      0.142      -0.513       0.074
+ethnic_本省閩南人     -0.1827      0.132     -1.384      0.167      -0.442       0.077
+ethnic_臺灣人       -0.1908      0.158     -1.204      0.229      -0.502       0.120
 ==============================================================================
-Omnibus:                      409.469   Durbin-Watson:                   1.893
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5753.867
-Skew:                           3.657   Prob(JB):                         0.00
-Kurtosis:                      17.867   Cond. No.                         64.0
+Omnibus:                      406.805   Durbin-Watson:                   1.911
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5637.769
+Skew:                           3.628   Prob(JB):                         0.00
+Kurtosis:                      17.708   Cond. No.                         66.8
 ==============================================================================
 
 Notes:
@@ -191,41 +198,43 @@ Notes:
 Model Group 3 - Level 2:
                                OLS Regression Results                              
 ===================================================================================
-Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.017
-Model:                                 OLS   Adj. R-squared:                 -0.005
-Method:                      Least Squares   F-statistic:                    0.7868
-Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.653
-Time:                             09:33:53   Log-Likelihood:                -358.60
-No. Observations:                      503   AIC:                             741.2
-Df Residuals:                          491   BIC:                             791.9
-Df Model:                               11                                         
+Dep. Variable:     campaign_worker_pp_mean   R-squared:                       0.021
+Model:                                 OLS   Adj. R-squared:                 -0.003
+Method:                      Least Squares   F-statistic:                    0.8930
+Date:                     Tue, 12 Sep 2023   Prob (F-statistic):              0.554
+Time:                             17:31:01   Log-Likelihood:                -357.56
+No. Observations:                      503   AIC:                             741.1
+Df Residuals:                          490   BIC:                             796.0
+Df Model:                               12                                         
 Covariance Type:                 nonrobust                                         
 ===============================================================================================
                                   coef    std err          t      P>|t|      [0.025      0.975]
 -----------------------------------------------------------------------------------------------
-const                           1.7218      0.272      6.328      0.000       1.187       2.256
-sex                             0.0494      0.050      0.998      0.319      -0.048       0.147
-edu                            -0.0463      0.051     -0.911      0.363      -0.146       0.054
-income                         -0.0002      0.022     -0.008      0.994      -0.044       0.044
-ethnic_原住民                     -0.3348      0.200     -1.674      0.095      -0.728       0.058
-ethnic_大陸各省市人                  -0.3006      0.191     -1.577      0.116      -0.675       0.074
-ethnic_本省客家人                   -0.2327      0.150     -1.556      0.120      -0.527       0.061
-ethnic_本省閩南人                   -0.1982      0.132     -1.501      0.134      -0.458       0.061
-ethnic_臺灣人                     -0.2020      0.159     -1.274      0.203      -0.514       0.110
-political_knowledge            -0.0462      0.040     -1.147      0.252      -0.125       0.033
-political_polarization_mean    -0.0353      0.026     -1.338      0.181      -0.087       0.017
-party_image_mean                0.0155      0.023      0.659      0.510      -0.031       0.062
+const                           1.6607      0.275      6.036      0.000       1.120       2.201
+sex                             0.0451      0.050      0.911      0.363      -0.052       0.143
+edu                            -0.0490      0.051     -0.964      0.335      -0.149       0.051
+age                             0.0689      0.048      1.429      0.154      -0.026       0.164
+income                         -0.0110      0.023     -0.470      0.639      -0.057       0.035
+ethnic_原住民                     -0.3164      0.200     -1.580      0.115      -0.710       0.077
+ethnic_大陸各省市人                  -0.2982      0.190     -1.566      0.118      -0.672       0.076
+ethnic_本省客家人                   -0.2288      0.149     -1.531      0.126      -0.522       0.065
+ethnic_本省閩南人                   -0.1887      0.132     -1.429      0.154      -0.448       0.071
+ethnic_臺灣人                     -0.1924      0.159     -1.214      0.225      -0.504       0.119
+political_knowledge            -0.0469      0.040     -1.165      0.245      -0.126       0.032
+political_polarization_mean    -0.0323      0.026     -1.223      0.222      -0.084       0.020
+party_image_mean                0.0144      0.023      0.615      0.539      -0.032       0.061
 ==============================================================================
-Omnibus:                      406.501   Durbin-Watson:                   1.892
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5639.358
-Skew:                           3.624   Prob(JB):                         0.00
-Kurtosis:                      17.716   Cond. No.                         116.
+Omnibus:                      404.200   Durbin-Watson:                   1.908
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5541.921
+Skew:                           3.599   Prob(JB):                         0.00
+Kurtosis:                      17.582   Cond. No.                         118.
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
-ΔF for Model Group 3: 1.2334604823136135
-p-value for ΔF (Model Group 3): 0.29691186111695256
+ΔF for Model Group 3: 1.1316
+p-value for ΔF: 0.3358
+
 --------------------------------------------------------------------------------
 

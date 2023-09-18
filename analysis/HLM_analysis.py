@@ -3,7 +3,7 @@ import statsmodels.api as sm
 from scipy.stats import f
 
 # Load data
-ml_df = pd.read_csv(r'C:\Users\GTW_User\Desktop\media_political\modeling_data.csv')
+ml_df = pd.read_csv(r'/Users/wen/Desktop/github/media_political/modeling_data.csv')
 
 # Perform One-Hot Encoding on the specified categorical variables
 data_encoded = pd.get_dummies(ml_df, columns=["ethnic", "Negative_1", "Negative_2", "Negative_3"], drop_first=True)
@@ -39,7 +39,7 @@ def calculate_sig_f_change(model_old, model_new):
     
     return delta_f, p_value
 
-def save_all_results_to_txt(results_list, delta_f_values, p_values, file_path="/mnt/data/offline_media_pp_mean_result.txt"):
+def save_all_results_to_txt(results_list, delta_f_values, p_values, file_path="/data/offline_media_pp_mean_result.txt"):
     """
     Save the hierarchical regression results along with ΔF and its significance to a .txt file.
     
@@ -65,7 +65,7 @@ def save_all_results_to_txt(results_list, delta_f_values, p_values, file_path="/
 
 # Define the blocks for the first analysis
 blocks_1 = [
-    ["sex", "edu", "income"] + [col for col in data_encoded.columns if "ethnic" in col],
+    ["sex", "age", "edu", "income"] + [col for col in data_encoded.columns if "ethnic" in col],
     ["political_knowledge", "TC_issue"]
 ]
 
@@ -75,7 +75,7 @@ print(results_1[0].summary(), results_1[1].summary())
 
 # Define the blocks for the second analysis
 blocks_2 = [
-    ["sex", "edu", "income"] + [col for col in data_encoded.columns if "ethnic" in col],
+    ["sex", "age", "edu", "income"] + [col for col in data_encoded.columns if "ethnic" in col],
     ["political_knowledge"] + [col for col in data_encoded.columns if "Negative_" in col]
 ]
 
@@ -85,7 +85,7 @@ print(results_2[0].summary(), results_2[1].summary())
 
 # Define the blocks for the third analysis
 blocks_3 = [
-    ["sex", "edu", "income"] + [col for col in data_encoded.columns if "ethnic" in col],
+    ["sex", "edu", "age", "income"] + [col for col in data_encoded.columns if "ethnic" in col],
     ["political_knowledge", "political_polarization_mean", "party_image_mean"]
 ]
 
